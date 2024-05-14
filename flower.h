@@ -3,13 +3,6 @@
 
 namespace Tmpl8
 {
-
-	// Flower types and their corresponding point values
-	//enum FlowerType {
-	///	REGULAR_FLOWER = 3,
-	//	RARE_FLOWER = 2
-	//};
-
 	class Flower
 	{
 	public:
@@ -26,7 +19,7 @@ namespace Tmpl8
 		//Method to draw the flower
 		void draw(Surface* screen);
 
-		//getting and setting position
+		// the logic behind getting and setting position
 		Point getPosition() const { return position; }
 
 		void setPosition(Point p) { position = p; }

@@ -23,6 +23,9 @@ namespace Tmpl8
 		//this for loop i call "the strainer" because it strains the amound of flowers that spwan around the grid.
 		for (int i = 0; i < NUM_FLOWERS; i++)
 		{
+			//the rand() function gives me a number 0 and 99
+			//if that random number is less than 5 (e.g. there's a 5% chance), the condition is true and this goes on for the rest of the code in this function
+
 			if (rand() % 100 < 5)//modulo
 			{
 				manyFlowers[i] = new Flower(rareFlowerSprite);
